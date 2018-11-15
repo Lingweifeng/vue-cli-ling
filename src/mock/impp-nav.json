@@ -1,0 +1,155 @@
+{
+	"code": "success",
+	"data": [
+		{
+            "id": "1",
+            "name": "基础信息管理",
+            "children": [
+                {
+                    "id": "1-1",
+                    "name": "组织管理",
+                    "path": "/impp/basic/organize"
+                },
+
+                {
+                    "id": "1-3",
+                    "name": "部门管理",
+                    "path": "/impp/basic/department"
+                },
+                {
+                    "id": "1-4",
+                    "name": "岗位管理",
+                    "path": "/impp/basic/position"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "权限管理",
+            "children": [
+                {
+                    "id": "2-1",
+                    "name": "账号管理",
+                    "path": "/impp/permission/user"
+                },
+                {
+                    "id": "2-2",
+                    "name": "用户管理",
+                    "path": "/impp/permission/user-info"
+                },
+                {
+                    "id": "2-3",
+                    "name": "角色管理",
+                    "path": "/impp/permission/role"
+                },
+                {
+                    "id": "2-4",
+                    "name": "功能管理",
+                    "path": "/impp/permission/menu"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "定时任务管理",
+            "children": [
+                {
+                    "id": "3-1",
+                    "name": "任务列表",
+                    "path": "/impp/task/task"
+                },
+                {
+                    "id": "3-2",
+                    "name": "表达式管理",
+                    "path": "/impp/task/expression"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "name": "系统管理",
+            "children": [
+                {
+                    "id": "4-1",
+                    "name": "系统日志",
+                    "path": "/impp/param/log-system"
+                },
+                {
+                    "id": "4-2",
+                    "name": "操作日志",
+                    "path": "/impp/param/log-operate"
+                },
+                {
+                    "id": "4-3",
+                    "name": "文件管理",
+                    "path": "/impp/param/file"
+                },
+                {
+                    "id": "4-4",
+                    "name": "消息管理",
+                    "path": "/impp/param/message"
+                },
+                {
+                    "id": "4-5",
+                    "name": "硬件管理",
+                    "path": "/impp/param/tool"
+                },
+                {
+                    "id": "4-6",
+                    "name": "硬件类型管理",
+                    "path": "/impp/param/tool-type"
+                },
+                {
+                    "id": "4-7",
+                    "name": "字典管理",
+                    "path": "/impp/param/dictionary"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "name": "系统配置",
+            "children": [
+                {
+                    "id": "5-3",
+                    "name": "系统参数",
+                    "path": "/impp/config/config"
+                },
+
+                {
+                    "id": "5-2",
+                    "name": "邮件配置",
+                    "path": "/impp/config/email"
+                },
+                {
+                    "id": "5-1",
+                    "name": "授权信息",
+                    "path": "/impp/config/auth"
+                },
+                {
+                    "id": "5-4",
+                    "name": "个性化界面",
+                    "path": "/impp/config/ui"
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "name": "系统资源",
+            "children": [
+                {
+                    "id": "6-1",
+                    "name": "语言管理",
+                    "path": "/impp/locale/language"
+                },
+
+                {
+                    "id": "6-2",
+                    "name": "资源管理",
+                    "path": "/impp/locale/resource"
+                }
+            ]
+        }
+	],
+	"message": "API调用成功"
+}

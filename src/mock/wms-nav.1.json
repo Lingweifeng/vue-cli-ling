@@ -1,0 +1,127 @@
+{
+	"code": "success",
+	"data": [
+		{
+            "id": "1",
+            "name": "库存管理",
+            "children": [
+                {
+                    "id": "1-1",
+                    "name": "仓库",
+                    "path": "/wms/warehouse"
+                },
+
+                {
+                    "id": "1-2",
+                    "name": "库存估值",
+                    "path": "/wms/warehouse-table"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "库存交易",
+            "children": [
+                {
+                    "id": "2-2",
+                    "name": "交易记录",
+                    "path": "/wms/stock-deal/deal-record"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "通用单据",
+            "children": [
+                {
+                    "id": "3-1",
+                    "name": "元数据管理",
+                    "path": "/wms/common-docket/meta-data"
+                },
+                {
+                    "id": "3-2",
+                    "name": "按钮管理",
+                    "path": "/wms/common-docket/btn-manage"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "name": "历史库存",
+            "children": [
+                {
+                    "id": "4-1",
+                    "name": "历史库存查询",
+                    "path": "/wms/stock-history/history-search"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "name": "基础数据",
+            "children": [
+                {
+                    "id": "5-1",
+                    "name": "仓库管理",
+                    "path": "/wms/data-base/store-manage"
+                },
+                {
+                    "id": "5-2",
+                    "name": "供应商管理",
+                    "path": "/wms/data-base/supplier-manage"
+                },
+                {
+                    "id": "5-3",
+                    "name": "储存区",
+                    "path": "/wms/data-base/storage-area"
+                },
+                {
+                    "id": "5-4",
+                    "name": "客户",
+                    "path": "/wms/data-base/customer"
+                },
+                {
+                    "id": "5-5",
+                    "name": "库位",
+                    "path": "/wms/data-base/storage-location"
+                },
+                {
+                    "id": "5-6",
+                    "name": "库位物料",
+                    "path": "/wms/data-base/materiel"
+                },
+                {
+                    "id": "5-7",
+                    "name": "抽点比例",
+                    "path": "/wms/data-base/bilje"
+                },
+                {
+                    "id": "5-8",
+                    "name": "物料路线主表",
+                    "path": "/wms/data-base/master-list"
+                },
+                {
+                    "id": "5-9",
+                    "name": "路线分配",
+                    "path": "/wms/data-base/route-distribution"
+                },
+                {
+                    "id": "5-10",
+                    "name": "物料路线明细",
+                    "path": "/wms/data-base/route-detail"
+                },
+                {
+                    "id": "5-11",
+                    "name": "物料模块 ",
+                    "path": "/wms/data-base/materiel-module"
+                },
+                {
+                    "id": "5-12",
+                    "name": "交易类型",
+                    "path": "/wms/data-base/deal-type"
+                }
+            ]
+        }
+	],
+	"message": "API调用成功"
+}

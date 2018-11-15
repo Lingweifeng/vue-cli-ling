@@ -1,0 +1,224 @@
+/* html5doctor.com Reset Stylesheet
+v1.4.1 2010-03-01
+Author: Richard Clark - http://richclarkdesign.com
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+html {
+    height: 100%;
+    font-size: 20px;
+}
+body {
+    font-size: 12px;
+    font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    line-height: 1;
+    color: #333;
+    background: #fff;
+    -webkit-text-size-adjust: 100%; // 解决APP字体突然变大的问题
+    -webkit-tap-highlight-color: transparent;
+}
+:focus {
+    outline: 1;
+}
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+nav,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: "";
+    content: none;
+}
+a {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: #409eff;
+    background: transparent;
+}
+a:hover {
+    color: #1b7ada;
+}
+b {
+    font-weight: normal;
+}
+i,
+em {
+    font-style: normal;
+}
+ins {
+    text-decoration: none;
+    color: #000;
+    background-color: #ff9;
+}
+mark {
+    font-style: italic;
+    font-weight: bold;
+    color: #000;
+    background-color: #ff9;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted #000;
+    cursor: help;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+hr {
+    display: block;
+    height: 1px;
+    padding: 0;
+    margin: 1em 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+input,
+select {
+    vertical-align: middle;
+}
+
+// ios下消除内阴影
+input,
+textarea {
+    box-sizing: border-box;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+/* custom font size */
+h1,
+h2,
+h3 {
+    padding: 10px 0;
+}
+h1 {
+    font-size: 18px;
+}
+h2 {
+    font-size: 16px;
+}
+h3 {
+    font-size: 14px;
+}
+h4 {
+    font-size: 12px;
+}
+sub,
+sup {
+    position: relative;
+    top: -50%;
+    right: 8%;
+    display: inline-block;
+    width: torem(20px);
+    height: torem(20px);
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: torem(20px);
+    text-align: center;
+    color: #fff;
+}

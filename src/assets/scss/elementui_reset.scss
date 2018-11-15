@@ -1,0 +1,300 @@
+// elementUI样式重写
+@charset "UTF-8";
+.impp-el-menu.el-menu {
+    border-bottom: none;
+    background-color: $black_top;
+    &.el-menu--horizontal > .el-submenu .el-submenu__title,
+    &.el-menu--horizontal > .el-menu-item {
+        height: 46px;
+        line-height: 46px;
+    }
+    &.el-menu--horizontal > .el-submenu.is-opened {
+        background-color: $white;
+    }
+    &.el-menu--horizontal {
+        border-bottom: none;
+    }
+    &.el-menu--horizontal > .el-submenu:focus .el-submenu__title,
+    &.el-menu--horizontal > .el-submenu:hover .el-submenu__title {
+        color: #909399;
+    }
+    &.el-menu--horizontal > .el-submenu.is-active .el-submenu__title {
+        border-bottom: none;
+        color: #909399;
+    }
+}
+.box-card {
+    .el-card__body {
+        padding: 0;
+    }
+}
+.form-inline {
+    .el-form-item__content {
+        min-width: 200px;
+    }
+    &.el-form--inline .el-form-item {
+        margin-right: 20px;
+    }
+}
+.el-dialog {
+    .el-form {
+        // width: 300px;
+        margin: 0 20px;
+    }
+    .el-input {
+        width: 200px;
+    }
+}
+// form
+.formbox {
+    padding: 20px 80px;
+    .el-form {
+        width: 500px;
+        margin: 20px auto;
+        .el-input {
+            display: block;
+        }
+        .el-date-editor.el-input,
+        .el-date-editor.el-input__inner {
+            width: 100%;
+        }
+    }
+}
+.searchbox {
+    .el-form-item--mini.el-form-item,
+    .el-form-item--small.el-form-item {
+        margin-bottom: 0;
+    }
+}
+.el-breadcrumb {
+    padding: 20px;
+}
+
+// element UI => odoo UI
+.impp {
+    // button
+    .el-button {
+        border-radius: 0;
+        line-height: 1.4;
+        color: $green;
+        &:focus,
+        &:hover,
+        &:active {
+            border-color: $gray_dark;
+            color: $green;
+            background-color: $gray_dark;
+        }
+    }
+    .el-button--danger {
+        border-color: #f56c6c;
+        color: #fff;
+        background-color: #f56c6c;
+        &:hover,
+        &:active,
+        &:focus {
+            border-color: #f74040;
+            color: #fff;
+            background-color: #f74040;
+        }
+    }
+    .el-button--small,
+    .el-button--small.is-round {
+        padding: 5px 10px;
+    }
+    .el-button--text {
+        @extend .el-button;
+        &:active {
+            box-shadow: inset 0 3px 5px $gray_darker;
+        }
+    }
+    .el-button--primary,
+    .el-button--success {
+        border-color: $green;
+        color: $white;
+        background-color: $green;
+        // border: none;
+        // color: #21b799;
+        // background-color: inherit;
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $green_darker;
+            color: $white;
+            background-color: $green_dark;
+            // border-color: inherit;
+            // color: #21b799;
+            // background-color: inherit;
+        }
+    }
+    // 弹窗确定取消按钮顺序调整
+    .dialog-footer,
+    .el-message-box__btns {
+        button:nth-child(1) {
+            float: right;
+            margin-left: 10px;
+        }
+    }
+    // rodio-button
+    .el-radio-button__inner:hover {
+        color: $green_dark;
+    }
+    .el-radio-button__orig-radio:checked + .el-radio-button__inner {
+        border-color: $green;
+        background-color: $green;
+        box-shadow: -1px 0 0 0 $green;
+    }
+    // drop down
+    .el-select-dropdown__item.selected,
+    .el-dropdown-menu__item:focus,
+    .el-dropdown-menu__item:not(.is-disabled):hover,
+    .el-checkbox__input.is-checked + .el-checkbox__label {
+        color: $green;
+    }
+    .el-select-dropdown__item.hover,
+    .el-select-dropdown__item:hover,
+    .el-dropdown-menu__item:focus,
+    .el-dropdown-menu__item:not(.is-disabled):hover {
+        background-color: $gray;
+    }
+    // form
+    .el-input.is-active .el-input__inner,
+    .el-input__inner:focus,
+    .el-select .el-input.is-focus .el-input__inner,
+    .el-select .el-input__inner:focus,
+    .el-checkbox__inner:hover,
+    .el-checkbox__input.is-focus .el-checkbox__inner {
+        border-color: $green;
+    }
+    .el-checkbox__input.is-checked .el-checkbox__inner,
+    .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+        border-color: $green;
+        background-color: $green;
+    }
+    // table
+    .el-table--small {
+        td,
+        th {
+            padding: 0;
+            .el-button--small,
+            .el-button--small.is-round {
+                padding: 5px 0;
+            }
+            &.el-table-column--selection {
+                text-align: center;
+            }
+            .el-button--text:hover {
+                border-color: transparent;
+                background-color: transparent;
+            }
+        }
+        .cell {
+            line-height: 28px;
+        }
+        th > .cell {
+            white-space: nowrap;
+        }
+        th.is-sortable:hover {
+            background-color: $gray_dark2;
+        }
+        &.el-table--border td,
+        &.el-table--border th,
+        .el-table__body-wrapper .el-table--border.is-scrolling-left ~ .el-table__fixed {
+            border-color: $gray_dark;
+        }
+        th,
+        .el-table__fixed-right-patch {
+            border-top: 1px solid $gray_darkest;
+            font-size: $fs13;
+            color: $dark;
+            background-color: $gray_dark;
+        }
+        .el-table__fixed-right-patch {
+            border-top-width: 2px;
+        }
+        .caret-wrapper {
+            height: 28px;
+        }
+        .sort-caret.ascending {
+            top: 2px;
+        }
+        .sort-caret.descending {
+            bottom: 4px;
+        }
+        .ascending .sort-caret.ascending {
+            border-bottom-color: $dark;
+        }
+        .descending .sort-caret.descending {
+            border-top-color: $dark;
+        }
+        &.el-table--border::after,
+        &.el-table--group::after,
+        &.el-table::before,
+        .el-table__fixed-right::before,
+        .el-table__fixed::before {
+            background-color: $gray_darker;
+        }
+        &.el-table--striped .el-table__body tr.el-table__row--striped.current-row td,
+        .el-table__body tr.current-row > td,
+        .el-table__body tr.hover-row.current-row > td,
+        .el-table__body tr.hover-row.el-table__row--striped.current-row > td,
+        .el-table__body tr.hover-row.el-table__row--striped > td,
+        .el-table__body tr.hover-row > td {
+            background-color: $green_light;
+        }
+    }
+    // pager
+    .el-pagination__sizes .el-input .el-input__inner:hover {
+        border-color: $green;
+    }
+    .el-pagination.is-background .el-pager li:not(.disabled):hover {
+        color: $green;
+    }
+    .el-pagination.is-background .el-pager li:not(.disabled).active {
+        background-color: $green;
+    }
+    .el-pagination.is-background .el-pager li:not(.disabled).active:hover {
+        color: $white;
+    }
+
+    // login
+    .login {
+        .el-form-item {
+            margin-bottom: 30px;
+            &:nth-child(2),
+            &:nth-child(3) {
+                margin-bottom: 15px;
+            }
+        }
+        .el-input--medium .el-input__inner {
+            height: 60px;
+            padding-left: 50px;
+            border-radius: 0;
+            font-size: $fs16;
+            line-height: 60px;
+        }
+        .el-input__prefix {
+            left: 15px;
+            line-height: 70px;
+            .fa {
+                font-size: $fs30;
+            }
+        }
+        .el-checkbox-group {
+            margin-left: 18px;
+        }
+        .el-button--primary {
+            display: block;
+            width: 100%;
+            height: 58px;
+            font-size: $fs18;
+        }
+    }
+}
+// wms公用
+main.el-main {
+    padding-top: 0;
+    background-color: #fff;
+}
+.el-tabs > .el-tabs__header {
+    margin: 0;
+}

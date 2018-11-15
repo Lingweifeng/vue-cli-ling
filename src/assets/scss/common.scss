@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+// 导入公用部分
+@import "mixin";
+@import "reset";
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.clearfix::after {
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: ".";
+}
+.clearfix {
+    *height: 1%;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-width: torem(4px) torem(8px);
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    &.left {
+        border-style: dashed solid dashed dashed;
+        border-color: transparent #333 transparent transparent;
+    }
+    &.right {
+        border-style: dashed dashed dashed solid;
+        border-color: transparent transparent transparent #333;
+    }
+    &.top {
+        border-width: torem(8px) torem(4px);
+        border-style: dashed dashed solid;
+        border-color: transparent transparent #333;
+    }
+    &.bottom {
+        border-width: torem(8px) torem(4px);
+        border-style: solid dashed dashed;
+        border-color: #333 transparent transparent;
+    }
+}
+
+// text
+.text-linethough {
+    text-decoration: line-through !important;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+
+// 按钮禁用标记
+.disabled {
+    cursor: not-allowed !important;
+}
+
+// tool
+.text-ellipsis {
+    overflow: hidden; /** 隐藏超出的内容 **/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.text-ellipsis-mulltiple {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.none {
+    display: none !important;
+}
+.block {
+    display: block !important;
+    width: 100%;
+}
+
+// 主界面
+.main {
+    /* 总高度-顶部高度-底部高度 */
+    height: calc(100% - 46px - 50px);
+    margin: 46px 0 50px;
+    overflow: auto;
+    background: $white;
+    .searchbox {
+        padding: 10px 20px;
+    }
+    .table-wrap {
+        /* 减去Breadcrumb高度和searchbox高度和pager高度 */
+        height: calc(100% - 126px - 32px);
+        padding: 10px 20px;
+        &.fitbox {
+            height: calc(100% - 116px);
+        }
+    }
+    .table-box {
+        height: calc(100% - 40px);
+        overflow: hidden;
+    }
+}
+// pager
+.page-wrap {
+    padding: 10px;
+    text-align: center;
+    // background-color: $white;
+    .el-pagination {
+        display: inline-block;
+    }
+}
+
+// 2列自适应布局
+.fitbox {
+    position: relative;
+    min-height: 200px;
+    overflow: hidden;
+    .side {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        border-right: 1px solid $light_ccc;
+        h3,
+        .title {
+            padding: 10px;
+            background-color: $gray;
+        }
+        .side-body {
+            height: calc(100% - 34px);
+            padding: 10px;
+            overflow: auto;
+        }
+    }
+    .content {
+        height: 100%;
+        margin: 10px 10px 10px 200px;
+        overflow: auto;
+        .table-box {
+            height: calc(100% - 30px - 72px);
+        }
+    }
+}
+.table-tool {
+    display: flex;
+    justify-content: space-between;
+}
+
+// fontawesome icon
+.fa.cell-fa {
+    font-size: 15px;
+}
+.fa.fa-success {
+    color: $green;
+}
+.fa.fa-warning {
+    color: $yellow;
+}
+.fa.fa-danger {
+    color: $red;
+}
+.fa.fa-info,
+.fa.fa-disabled {
+    color: $light;
+}
+// margin
+.mb10 {
+    margin-bottom: 10px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+
+@import "elementui_reset.scss";

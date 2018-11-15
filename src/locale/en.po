@@ -1,0 +1,131 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: easygettext\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 2.0.6\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+
+#: src/components/header/user-info.vue:18
+#: src/components/header/user-info.vue:26
+msgid "2018年9月13日下午13点10分"
+msgstr "13:10 p.m. on September 13, 2018"
+
+#: src/components/login/index.vue:69
+msgid "Copyright ©2017上海东尚信息科技股份有限公司"
+msgstr ""
+"Copyright exclusive 2017 Shanghai Dong Shang information Polytron "
+"Technologies Inc"
+
+#: src/components/footer/index.vue:3
+msgid "Copyright ©2018 上海东尚信息科技股份有限公司版权所有"
+msgstr ""
+"Copyright exclusive 2018 Shanghai Dong Shang information Polytron "
+"Technologies Inc all rights reserved"
+
+#: src/components/header/user-info.vue:40
+msgid "English"
+msgstr "English"
+
+#: src/components/footer/index.vue:4
+msgid "IMPP平台设置中心"
+msgstr "IMPP platform setting Center"
+
+#: src/components/login/index.vue:5 src/components/login/index.vue:15
+msgid "东尚综合管理平台"
+msgstr "Dong Shang integrated management platform"
+
+#: src/components/password/password-update.vue:29
+msgid "两次输入密码不一致!"
+msgstr "The two time the password is different"
+
+#: src/components/header/user-info.vue:39
+msgid "中文"
+msgstr "Chinese"
+
+#: src/components/header/user-info.vue:41
+msgid "修改密码"
+msgstr "Change Password"
+
+#: src/components/header/user-info.vue:16
+#: src/components/header/user-info.vue:24
+msgid "全体员工"
+msgstr "all hands"
+
+#: src/components/header/user-info.vue:17
+#: src/components/header/user-info.vue:25
+msgid ""
+"全体员工2018年9月14日请到大会议室开会会议内容与全年工作计划有关勿要"
+"迟到，禁止请假"
+msgstr ""
+"All staff members are requested to attend a meeting in the "
+"conference room on September 14, 2018. The contents of the meeting "
+"are related to the annual work plan. Don't be late. No leave is "
+"allowed"
+
+#: src/components/password/password-update.vue:14
+msgid "取 消"
+msgstr "Cancel"
+
+#: src/components/login/index.vue:16
+msgid ""
+"基于工业4.0规划，实现工厂全面的信息化，使得未来数字化工厂实现数据实"
+"时化、信息可视化、系统无纸化、制造智能化，最终走向基于工业4.0的智慧"
+"工厂模式"
+msgstr ""
+"Based on industrial 4.0 planning, realize the comprehensive "
+"informatization of factories, make the future digital factories "
+"realize real-time data, information visualization, paperless "
+"system, intelligent manufacturing, and eventually move towards the "
+"intelligent factory model based on industrial 4.0"
+
+#: src/components/login/index.vue:19
+msgid "密码登录"
+msgstr "Password login"
+
+#: src/components/header/simple.vue:3
+msgid "控制台"
+msgstr "console"
+
+#: src/components/header/user-info.vue:42
+msgid "注销"
+msgstr "logout"
+
+#: src/components/login/index.vue:69
+msgid "版权信息"
+msgstr "Copyright information"
+
+#: src/components/login/index.vue:69
+msgid "版权申明"
+msgstr "copyright"
+
+#: src/components/login/index.vue:49
+msgid "登录"
+msgstr "login"
+
+#: src/components/password/password-update.vue:15
+msgid "确 定"
+msgstr "confirm"
+
+#: src/components/login/index.vue:69
+msgid "联系我们"
+msgstr "Contact us"
+
+#: src/components/login/index.vue:45
+msgid "记住密码"
+msgstr "Remember the password"
+
+#: src/components/index/menu.vue:4
+msgid "设置"
+msgstr "setting"
+
+#: src/components/password/password-update.vue:27
+msgid "请再次输入密码"
+msgstr "Please input the password again"

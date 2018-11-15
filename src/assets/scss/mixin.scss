@@ -1,0 +1,63 @@
+@charset "UTF-8";
+// 添加需要变量字体大小
+$font: "BentonSans-Regular";
+$PingFangSC: pingfangsc,helvetica neue,hiragino sans gb,arial,microsoft yahei ui,microsoft yahei,simsun,"sans-serif";
+$fs10: 10px;
+$fs11: 11px;
+$fs12: 12px;
+$fs13: 13px;
+$fs14: 14px;
+$fs16: 16px;
+$fs18: 18px;
+$fs20: 20px;
+$fs24: 24px;
+$fs30: 30px;
+$fs36: 36px;
+
+// color
+$yellow: #e6a23c;
+$red: #f56c6c;
+$reder: #f56c6f;
+$black_top: #24292e;
+$black: #333;
+$white: #fff;
+$light: #999;
+$light_ccc: #ccc;
+$dark: #666;
+$blue: #4e93fd;
+$gray: #f5f5f5;
+$gray_dark: #e6e6e6;
+$gray_dark2: #d6d6d3;
+$gray_darker: #bfbfbf;
+$gray_darkest: #a8a8a8;
+$green: #21b799;
+$green_dark: #198c75;
+$green_darker: #18836e;
+$green_darkest: #0e4b3f;
+$green_light: #ecfff7;
+
+//定位上下左右居中
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+// 行高
+@mixin lineheight($height) {
+    height: $height;
+    line-height: $height;
+}
+// 圆角
+@mixin borderRadius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+// 垂直居中对齐
+@mixin inline-middle() {
+    display: inline-block;
+    vertical-align: middle;
+}
